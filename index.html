@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R COFFE – Minimalist Premium Coffee Shop</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">R COFFE</a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content fade-in">
+            <h1>Satu Cangkir, Sejuta Cerita.</h1>
+            <p class="hero-subtitle">Nikmati pengalaman kopi premium yang menenangkan dan memukau.</p>
+            <div class="hero-cta">
+                <a href="#menu" class="btn primary">Lihat Menu</a>
+                <a href="#about" class="btn secondary">Tentang Kami</a>
+            </div>
+        </div>
+        <div class="hero-image fade-in">
+            <img src="images/hero-coffee.svg" alt="Cappuccino premium R COFFE" />
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>Menu Kami</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="hot">Kopi Panas</button>
+                <button class="filter-btn" data-filter="cold">Kopi Dingin</button>
+                <button class="filter-btn" data-filter="non-coffee">Non‑Kopi</button>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- 1. Americano -->
+                <div class="product-card fade-in" data-category="hot">
+                    <img src="images/americano.svg" alt="Americano" />
+                    <div class="product-info">
+                        <h3>Americano</h3>
+                        <p>Kopi hitam pekat dengan air panas dan aroma khas yang kaya.</p>
+                        <span class="price-tag">Rp18.000</span>
+                    </div>
+                </div>
+
+                <!-- 2. Caffe Latte -->
+                <div class="product-card fade-in" data-category="hot">
+                    <img src="images/latte.svg" alt="Caffe Latte" />
+                    <div class="product-info">
+                        <h3>Caffe Latte</h3>
+                        <p>Espresso seimbang dengan susu steamed yang lembut dan creamy.</p>
+                        <span class="price-tag">Rp22.000</span>
+                    </div>
+                </div>
+
+                <!-- 3. Cappuccino -->
+                <div class="product-card fade-in" data-category="hot">
+                    <img src="images/cappuccino.svg" alt="Cappuccino" />
+                    <div class="product-info">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso, susu segar pilihan, dan foam tebal nan lembut.</p>
+                        <span class="price-tag">Rp23.000</span>
+                    </div>
+                </div>
+
+                <!-- 4. Caramel Latte -->
+                <div class="product-card fade-in" data-category="hot">
+                    <img src="images/caramel-latte.svg" alt="Caramel Latte" />
+                    <div class="product-info">
+                        <h3>Caramel Latte</h3>
+                        <p>Paduan latte klasik dengan sirup karamel manis gurih.</p>
+                        <span class="price-tag">Rp25.000</span>
+                    </div>
+                </div>
+
+                <!-- 5. Iced Coffee -->
+                <div class="product-card fade-in" data-category="cold">
+                    <img src="images/iced-coffee.svg" alt="Iced Coffee" />
+                    <div class="product-info">
+                        <h3>Iced Coffee</h3>
+                        <p>Kopi dingin menyegarkan dengan es batu pilihan yang pas.</p>
+                        <span class="price-tag">Rp20.000</span>
+                    </div>
+                </div>
+
+                <!-- 6. Matcha Latte -->
+                <div class="product-card fade-in" data-category="cold">
+                    <img src="images/matcha-latte.svg" alt="Matcha Latte" />
+                    <div class="product-info">
+                        <h3>Matcha Latte</h3>
+                        <p>Matcha murni khas Jepang berpadu dengan susu dingin segar.</p>
+                        <span class="price-tag">Rp22.000</span>
+                    </div>
+                </div>
+
+                <!-- 7. Chocolate Milk -->
+                <div class="product-card fade-in" data-category="non-coffee">
+                    <img src="images/chocolate.svg" alt="Chocolate Milk" />
+                    <div class="product-info">
+                        <h3>Chocolate Milk</h3>
+                        <p>Cokelat premium pekat yang creamy dan menenangkan jiwa.</p>
+                        <span class="price-tag">Rp18.000</span>
+                    </div>
+                </div>
+
+                <!-- 8. Herbal Tea -->
+                <div class="product-card fade-in" data-category="non-coffee">
+                    <img src="images/herbal-tea.svg" alt="Herbal Tea" />
+                    <div class="product-info">
+                        <h3>Herbal Tea</h3>
+                        <p>Seduhan teh herbal aromatik pilihan yang menyegarkan tubuh.</p>
+                        <span class="price-tag">Rp15.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container about-content">
+            <div class="about-text fade-in">
+                <h2>Tentang R COFFE</h2>
+                <p>R COFFE adalah ruang bagi pecinta kopi yang mencari keseimbangan antara rasa, kenyamanan, dan
+                    keindahan. Kami menyajikan biji pilihan dan teknik penyeduhan yang terjamin kualitasnya, sehingga
+                    setiap tegukan menjadi momen istimewa.</p>
+                <p>Ruang kami dirancang dengan sentuhan minimalis premium, memberikan suasana yang tenang untuk
+                    bersantai, bekerja, atau sekadar menikmati secangkir kopi.</p>
+            </div>
+            <div class="about-image fade-in">
+                <img src="images/about-cafe.svg" alt="Interior coffee shop R COFFE" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Highlight Section -->
+    <section class="brand-highlight fade-in">
+        <div class="container">
+            <h2>Good Coffee, Better Moments.</h2>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Mari Terhubung</h2>
+            <p>Terhubung dengan kami melalui WhatsApp atau Instagram untuk pertanyaan, pemesanan, atau sekadar menyapa.
+            </p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/1234567890" target="_blank" class="btn primary" id="whatsapp-btn">WhatsApp</a>
+                <a href="https://instagram.com/yourhandle" target="_blank" class="btn secondary"
+                    id="instagram-btn">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">R COFFE</a>
+                <p class="tagline">Coffee • Comfort • Connection</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <!-- Inline SVG Social Icons -->
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> R COFFE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

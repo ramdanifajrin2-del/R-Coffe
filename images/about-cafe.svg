@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a3b32" />
+      <stop offset="60%" stop-color="#2d221c" />
+      <stop offset="100%" stop-color="#1c1410" />
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c5339" />
+      <stop offset="100%" stop-color="#412818" />
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#ffe3a8" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#ffe3a8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="woodShelf" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8f5b34" />
+      <stop offset="50%" stop-color="#a86e42" />
+      <stop offset="100%" stop-color="#6f4222" />
+    </linearGradient>
+  </defs>
+
+  <!-- Cafe Interior Background -->
+  <rect width="800" height="420" fill="url(#wallGrad)" />
+  <!-- Minimalist Brick lines -->
+  <g stroke="#3a2e26" stroke-width="1.5" opacity="0.4">
+    <line x1="0" y1="80" x2="800" y2="80" />
+    <line x1="0" y1="140" x2="800" y2="140" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="260" x2="800" y2="260" />
+    <line x1="0" y1="320" x2="800" y2="320" />
+  </g>
+
+  <!-- Cafe Floor -->
+  <polygon points="0,420 800,420 800,600 0,600" fill="url(#floorGrad)" />
+  <line x1="150" y1="420" x2="0" y2="600" stroke="#5a3821" stroke-width="2" opacity="0.5" />
+  <line x1="350" y1="420" x2="250" y2="600" stroke="#5a3821" stroke-width="2" opacity="0.5" />
+  <line x1="550" y1="420" x2="520" y2="600" stroke="#5a3821" stroke-width="2" opacity="0.5" />
+  <line x1="720" y1="420" x2="780" y2="600" stroke="#5a3821" stroke-width="2" opacity="0.5" />
+
+  <!-- Warm Hanging Lamps -->
+  <circle cx="250" cy="90" r="140" fill="url(#lampGlow)" />
+  <circle cx="550" cy="90" r="140" fill="url(#lampGlow)" />
+
+  <line x1="250" y1="0" x2="250" y2="70" stroke="#111" stroke-width="3" />
+  <path d="M 220,95 Q 250,65 280,95 Z" fill="#222" />
+  <circle cx="250" cy="98" r="10" fill="#fff3c9" />
+
+  <line x1="550" y1="0" x2="550" y2="70" stroke="#111" stroke-width="3" />
+  <path d="M 520,95 Q 550,65 580,95 Z" fill="#222" />
+  <circle cx="550" cy="98" r="10" fill="#fff3c9" />
+
+  <!-- Shelves on the wall with plants and coffee gear -->
+  <rect x="80" y="180" width="300" height="14" rx="3" fill="url(#woodShelf)" />
+  <!-- Glass Jars of beans -->
+  <rect x="110" y="130" width="36" height="50" rx="4" fill="#a4b3b6" opacity="0.4" stroke="#fff" stroke-width="1.5" />
+  <rect x="115" y="145" width="26" height="32" rx="2" fill="#442211" />
+  <rect x="160" y="125" width="40" height="55" rx="4" fill="#a4b3b6" opacity="0.4" stroke="#fff" stroke-width="1.5" />
+  <rect x="165" y="140" width="30" height="38" rx="2" fill="#58311a" />
+  <!-- Coffee plant in ceramic pot -->
+  <path d="M 240,180 L 250,140 L 280,140 L 290,180 Z" fill="#e8dac6" />
+  <path d="M 265,140 Q 240,105 220,115 C 235,130 250,125 265,140 Z" fill="#4f7942" />
+  <path d="M 265,140 Q 285,100 310,110 C 295,128 280,125 265,140 Z" fill="#3b5e30" />
+  <path d="M 265,130 Q 265,95 270,90 Q 275,110 265,130 Z" fill="#609350" />
+
+  <!-- Right Shelf with Books & Cups -->
+  <rect x="440" y="180" width="280" height="14" rx="3" fill="url(#woodShelf)" />
+  <rect x="470" y="135" width="12" height="45" rx="2" fill="#a8754f" />
+  <rect x="484" y="130" width="14" height="50" rx="2" fill="#d9c4a5" />
+  <rect x="500" y="138" width="10" height="42" rx="2" fill="#2b1b16" />
+  <!-- Chemex Dripper -->
+  <path d="M 620,130 L 650,130 L 640,150 L 655,180 L 615,180 L 630,150 Z" fill="#c2d5db" opacity="0.6" stroke="#fff" stroke-width="1.5" />
+  <rect x="627" y="147" width="16" height="8" rx="2" fill="#8f5b34" />
+
+  <!-- Coffee Bar Counter -->
+  <rect x="180" y="340" width="440" height="180" rx="6" fill="#1f1612" stroke="#52392c" stroke-width="2" />
+  <!-- Counter top -->
+  <rect x="160" y="330" width="480" height="20" rx="4" fill="url(#woodShelf)" />
+
+  <!-- Espresso Machine Silhouette on Counter -->
+  <rect x="230" y="275" width="110" height="55" rx="4" fill="#a3a9ad" stroke="#dbe0e2" stroke-width="2" />
+  <rect x="245" y="285" width="80" height="15" rx="2" fill="#333" />
+  <circle cx="260" cy="292" r="4" fill="#52c41a" />
+  <circle cx="280" cy="292" r="4" fill="#faad14" />
+  <rect x="250" y="315" width="25" height="15" rx="2" fill="#666" />
+  <rect x="290" y="315" width="25" height="15" rx="2" fill="#666" />
+
+  <!-- Menu Board on Wall -->
+  <rect x="340" y="40" width="120" height="90" rx="4" fill="#191310" stroke="#a8754f" stroke-width="3" />
+  <text x="400" y="65" font-family="'Playfair Display', serif" font-size="14" font-weight="bold" fill="#f4ebdd" text-anchor="middle">R COFFE</text>
+  <line x1="360" y1="75" x2="440" y2="75" stroke="#a8754f" stroke-width="1" />
+  <text x="400" y="90" font-family="'Poppins', sans-serif" font-size="9" fill="#d9c4a5" text-anchor="middle">EST. 2024</text>
+  <text x="400" y="110" font-family="'Poppins', sans-serif" font-size="8" fill="#f4ebdd" text-anchor="middle">BREWED WITH LOVE</text>
+
+  <!-- Foreground Atmosphere -->
+  <rect x="0" y="550" width="800" height="50" fill="#000" opacity="0.3" />
+</svg>
